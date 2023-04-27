@@ -20,13 +20,13 @@ Para termos um lançamos tranquilo no mercado vamos automatizar os testes, visan
 1. editar
 - A descrição da tarefa é opcional e pode ser preenchida em um segundo momento utilizando o verbo PUT. // eu quero adicionar uma descrição à tarefa
 - O usuário, a qual destina-se a atividade, também pode ser alterado. // eu quero alterar o usuário
-- Após a conclusão de uma tarefa, essa pode ser encerrada chamando o PUT da API e trocando o status para CLOSE. // eu quero encerrar uma tarefa
+- Após a conclusão de uma tarefa, essa pode ser encerrada chamando o PUT da API e trocando o taskStatus para CLOSE. // eu quero encerrar uma tarefa
 - Nenhuma tarefa encerrada pode sofrer qualquer alteração. // eu quero editar uma tarefa encerrada
 - Não deve ser possível apagar uma atividade já cadastrada. Permanecerá para histórico.
 
 2. registrar
-- Todas as tarefas recém cadastradas devem ter o status igual a OPEN. // eu quero registrar uma nova tarefa com status OPEN
-- Não deve ser possível cadastrar uma tarefa com status igual a CLOSE. // eu quero registrar uma tarefa com status CLOSE
+- Todas as tarefas recém cadastradas devem ter o taskStatus igual a OPEN. // eu quero registrar uma nova tarefa com taskStatus OPEN
+- Não deve ser possível cadastrar uma tarefa com taskStatus igual a CLOSE. // eu quero registrar uma tarefa com taskStatus CLOSE
 - A tarefa deve estar vinculada a um usuário. Esse vinculo acontece no payload de criação. // eu quero registrar uma tarefa sem usuário
 - Toda tarefa cadastrada deve ter a informação de title preenchida, sendo essa uma informação obrigatória. // eu quero registrar uma tarefa sem título
 - Ao encerrar uma tarefa deve ser registrado a data em closedAt.

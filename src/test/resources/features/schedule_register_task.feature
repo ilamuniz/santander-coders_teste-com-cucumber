@@ -5,7 +5,7 @@ Feature: Register new tasks
       | title               | status | user    |
       | Medical appointment | OPEN   | Michael |
     When I register the task
-    Then found the task in database
+    Then The task is found in database
     And The response should have status equals 201
 
   Scenario: I want to register a new task with status CLOSE
@@ -13,7 +13,7 @@ Feature: Register new tasks
       | title                | status | user  |
       | Take cat to pet shop | CLOSE  | Aimee |
     When I register the task
-    Then not found the task in database
+    Then The task is not found in database
     And The response should have status equals 400
 
   Scenario: I want to register a new task without user
@@ -21,7 +21,7 @@ Feature: Register new tasks
       | title               | status | user  |
       | Pay the light bill  | OPEN   |       |
     When I register the task
-    Then not found the task in database
+    Then The task is not found in database
     And The response should have status equals 400
 
   Scenario: I want to register a new task without title
@@ -29,5 +29,5 @@ Feature: Register new tasks
       | title   | status | user  |
       |         | OPEN   | Alice |
     When I register the task
-    Then not found the task in database
+    Then The task is not found in database
     And The response should have status equals 400

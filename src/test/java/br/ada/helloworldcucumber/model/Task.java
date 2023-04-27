@@ -7,7 +7,7 @@ public class Task {
     private String title;
     private String description;
     private User user;
-    private Status status;
+    private TaskStatus taskStatus;
     private LocalDate closedAt;
 
     public String getTitle() {
@@ -34,12 +34,12 @@ public class Task {
         this.user = user;
     }
 
-    public Status getStatus() {
-        return status;
+    public TaskStatus getStatus() {
+        return taskStatus;
     }
 
-    public void setStatus(Status status) {
-        this.status = status;
+    public void setStatus(TaskStatus taskStatus) {
+        this.taskStatus = taskStatus;
     }
 
     public LocalDate getClosedAt() {

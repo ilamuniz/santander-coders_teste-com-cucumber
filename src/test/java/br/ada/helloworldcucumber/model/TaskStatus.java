@@ -1,6 +1,6 @@
 package br.ada.helloworldcucumber.model;
 
-public enum Status {
+public enum TaskStatus {
 
     OPEN, CLOSE;
 
